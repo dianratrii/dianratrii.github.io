@@ -1353,6 +1353,14 @@ ul.icons li .icon:before {
   font-size: 1.25em;
 }
 
+@media (max-width: 768px) {
+  ul.feature-icons li {
+    width: 100%;
+    padding-left: 3.5em;
+    margin-bottom: 1.5em; /* kasih jarak antar item */
+  }
+}
+
 /* Divider year */
 
 .divider {
