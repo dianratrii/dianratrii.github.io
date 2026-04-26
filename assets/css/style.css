@@ -14,6 +14,16 @@ body {
   color: #444444;
 }
 
+body.project-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body.project-page #main {
+  flex: 1;
+}
+
 a {
   color: #34b7a7;
   text-decoration: none;
@@ -478,7 +488,7 @@ h6 {
 @media (max-width: 992px) {
   #hero:before {
     content: "";
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.1);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -1002,6 +1012,11 @@ section {
 }
 
 .portfolio .portfolio-wrap img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  display: block;
   transition: all ease-in-out 0.3s;
 }
 
